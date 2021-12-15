@@ -32,6 +32,15 @@
   <img alt="Bud-desafio" title="#Bud-desafio" src="./assets/image/bud-desafio.gif" />
 </h1>
 
+<br>
+<br>
+
+## Deploy Netlify:
+
+<p>
+  <a href="https://desafio-bud-wsasouza.netlify.app/" target="blank">Desafio Bud | wsasouza</a>
+</p>
+
 ## License
 
 [MIT licensed](LICENSE).
