@@ -28,7 +28,7 @@ body {
 
 .container .header h1 {
   font-size: 36px;
-  color: #ff9100;
+  color: #fe4400;
 }
 
 .container .header p {
@@ -62,6 +62,44 @@ body {
   padding: 10px;
   margin-top: 25px;
   border-radius: 6px;
-  color: #ff9100;
+  color: #fe4400;
   font-size: 36px;
 }
+
+footer {
+  position: relative;
+  width: 100%;
+  background: #fe4400;  
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+footer .sci {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;  
+  flex-wrap: wrap;  
+}
+
+footer .sci li {
+  list-style: none;
+}
+
+footer .sci li a {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 25px;
+  display: inline-block;
+  transition: 0.5s;  
+}
+
+footer .sci li a:hover {
+  transform: translateY(-10px);
+}
+
