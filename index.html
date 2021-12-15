@@ -13,7 +13,7 @@
 <body>
   <div class="container">
     <div class="header">
-      <h1>Bud | Algoritmo</h1>
+      <h1>Bud | Desafio</h1>
       <p>Função que recebe um número qualquer e encontra o maior<br>
         número formado por dígitos consecutivos naquele número.</p>
     </div>
@@ -21,7 +21,8 @@
     <form id="form" action="#">
       <div class="input_box">
         <input 
-          type="number" 
+          type="number"
+          number-only 
           id="data" 
           placeholder="Digite um número qualquer..." 
           onchange="printMaxNumber()"
@@ -32,7 +33,7 @@
           <option value="53590">
           <option value="9012364509789">          
         </datalist>
-                
+
         <span id="text"></span>
       </div>
     </form>
