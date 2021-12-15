@@ -1,15 +1,12 @@
 function findNumberMaxValue(arr) {
-
   let max = arr.reduce(function(a, b) {
     return Math.max(a, b);
   });
 
   return max;
-
 }
 
 function findNumberMaxIndex(arr) {
-
   let max = arr[0];
   let maxIndex = 0;
 
@@ -23,10 +20,14 @@ function findNumberMaxIndex(arr) {
   return maxIndex;
 }
 
-function printMaxNumber() {
-  
+function printMaxNumber() {  
   let data = document.getElementById("data").value;
-  text.innerHTML = '';
+  
+  if (!data) {
+    text.innerHTML = '';
+    return
+  } 
+
   let arr = data.split("");
   let size = arr.length;  
 
@@ -34,20 +35,21 @@ function printMaxNumber() {
     arr[i] = +arr[i];
   }
 
+  
+  let index = findNumberMaxIndex(arr);
+  let value = findNumberMaxValue(arr);
+  let aux = (index + 1) - size; 
+
+  text.innerHTML = '';
+
   if (size === 1)     
     return text.innerHTML = arr;
   
 
-  else if (size === 2) {
-    result = findNumberMaxValue(arr)
-    return text.innerHTML = result;
-  }
+  else if (size === 2)     
+    return text.innerHTML = value;  
 
-  else if (size <= 6) {
-    let index = findNumberMaxIndex(arr);
-    let value = findNumberMaxValue(arr);
-    let aux = (index + 1) - size;
-
+  else if (size <= 6) { 
     if (aux === 0)      
       return text.innerHTML = value;
     else 
@@ -56,7 +58,12 @@ function printMaxNumber() {
     return text.innerHTML = result.join('');
   }
 
-  
+  else { 
+    if (aux === 0)      
+      return text.innerHTML = value;
+    else 
+      result = arr.slice(index, index+5);
 
-
+    return text.innerHTML = result.join('');
+  }
 }

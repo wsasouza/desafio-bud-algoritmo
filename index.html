@@ -6,28 +6,36 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="shortcut icon" href="/assets/image/favicon.ico" type="image/x-icon">
   <title>Bud | wsasouza@hotmail.com</title>
 </head>
 
 <body>
   <div class="container">
-    <h1>Bud | Algoritmo</h1>
-    <p>Função que recebe um número qualquer e encontra o maior<br>
-      número formado por dígitos consecutivos naquele número.</p>
+    <div class="header">
+      <h1>Bud | Algoritmo</h1>
+      <p>Função que recebe um número qualquer e encontra o maior<br>
+        número formado por dígitos consecutivos naquele número.</p>
+    </div>
 
     <form id="form" action="#">
       <div class="input_box">
         <input 
           type="number" 
           id="data" 
-          placeholder="Digite um número qualquer..."
+          placeholder="Digite um número qualquer..." 
           onchange="printMaxNumber()"
+          list="default_numbers"
+
         >
-        <span id="text"></span> 
+        <datalist id="default_numbers">
+          <option value="53590">
+          <option value="9012364509789">          
+        </datalist>
+                
+        <span id="text"></span>
       </div>
     </form>
-
-
   </div>
 
   <script src="/assets/js/script.js"></script>
