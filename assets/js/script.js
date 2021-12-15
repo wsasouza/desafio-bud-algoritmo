@@ -67,3 +67,6 @@ function printMaxNumber() {
     return text.innerHTML = result.join('');
   }
 }
+
+/* todo: Function still doesn't handle when 
+  larger numbers are at the end of the array */
